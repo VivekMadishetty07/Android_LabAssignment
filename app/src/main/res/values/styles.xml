@@ -8,4 +8,17 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <!-- Title Bar color here -->
+        <item name="android:colorPrimaryDark">#202024</item>
+        <!-- Background color here -->
+        <item name="android:windowBackground">#202024</item>
+    </style>
+
+    <style name="noAnimTheme" parent="android:Theme.NoTitleBar">
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+
 </resources>

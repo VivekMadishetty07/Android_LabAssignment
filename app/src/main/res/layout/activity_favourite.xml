@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.FavoritePlaces"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:weightSum="10"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_weight="10"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:src="@drawable/googlemap"
+                android:layout_width="25dp"
+                android:layout_height="25dp"/>
+
+
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:id="@+id/info_text"
+                android:layout_width="wrap_content"
+                android:textColor="@color/white"
+                android:text="Favourite list"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:fontFamily="@font/bold"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+
+        <ImageView
+            android:id="@+id/img_addfav"
+            android:src="@drawable/filledadd"
+            android:layout_width="25dp"
+            android:layout_height="25dp"/>
+
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:padding="3dp"
+        android:id="@+id/rec_favlocation"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+</LinearLayout>
